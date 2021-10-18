@@ -28,12 +28,15 @@ h3 {
   opacity: 0.7;
 }
 
-p {
+.about-app-paragraphs {
   padding: 20px 50px 30px 0;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+}
+.about-paragraphs {
+  text-align: center;
 }
 
 .navigation-links {
@@ -60,8 +63,24 @@ p {
   padding: 20px 15px;
 }
 
+.contact-link:hover,
+.yoga-link:hover,
+.weather-link:hover,
+.yogurt-link:hover {
+  background: white;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  padding: 20px 15px;
+}
+
 .about-link {
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.about-link:hover {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
   border: 1px solid var(--primary-color);
 }
 
@@ -90,4 +109,27 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  .email-link,
+  .email-link-name {
+    font-size: 18px;
+  }
+  .weatherProject {
+    margin-top: 20px;
+  }
 }
